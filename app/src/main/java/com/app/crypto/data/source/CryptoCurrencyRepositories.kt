@@ -45,11 +45,11 @@ class CryptoCurrencyRepositories @Inject constructor(val apiInterface: ApiInterf
     }
 
 
-    private fun getCryptocurrenciesFromDb(limit: Int, offset: Int): Observable<List<Cryptocurrency>> {
-
+    fun getCryptocurrenciesFromDb(limit: Int, offset: Int):Observable<List<Cryptocurrency>>{
         return cryptoCurrencyDao.queryCryptoCurrencies(limit, offset)
                 .toObservable()
                 .doOnNext {
+                    //Print log it.size :)
                     Log.e("REPOSITORY DB *** ", it.size.toString())
                 }
     }

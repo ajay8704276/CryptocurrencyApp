@@ -8,7 +8,7 @@ import com.app.crypto.data.Cryptocurrency
  * Created by admin on 04/04/18.
  */
 
-@Database(entities = arrayOf(Cryptocurrency::class),version = 1)
+@Database(entities = arrayOf(Cryptocurrency::class),version = 4)
 abstract class Database : RoomDatabase() {
 
     abstract fun cryptoCurrencyDao(): CryptoCurrencyDao

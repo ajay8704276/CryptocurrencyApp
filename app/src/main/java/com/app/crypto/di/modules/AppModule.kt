@@ -2,7 +2,6 @@ package com.app.crypto.di.modules
 
 import android.app.Application
 import android.arch.persistence.room.Room
-import com.app.crypto.data.source.local.CryptoCurrencyDao
 import com.app.crypto.data.source.local.Database
 import dagger.Module
 import dagger.Provides
